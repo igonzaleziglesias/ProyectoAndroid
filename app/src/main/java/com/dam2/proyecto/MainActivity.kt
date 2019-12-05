@@ -5,6 +5,7 @@ import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.service.autofill.Validators.and
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -15,7 +16,7 @@ import org.jetbrains.anko.toast
 
 const val PICK_RETO1_REQUEST = 1
 const val PICK_RETO2_REQUEST = 2
-
+const val PICK_RETO3_REQUEST = 3
 
 class MainActivity : Activity() {
 
@@ -37,6 +38,14 @@ class MainActivity : Activity() {
             val intent2 = Intent(this, Reto2::class.java)//creamos el intent
             startActivityForResult(intent2, PICK_RETO2_REQUEST)//iniciamos
         }
+
+        //reto3
+        boton3.setOnClickListener{
+            //buscar con browser en internet en otra activity
+            val intent3 = Intent(this, Reto3::class.java)//creamos el intent
+            startActivityForResult(intent3, PICK_RETO3_REQUEST)//iniciamos
+        }
+
     }
 
     @SuppressLint("ResourceAsColor")
@@ -80,6 +89,30 @@ class MainActivity : Activity() {
             }
             boton2.setEnabled(false)//desactivamos el reto, ya se ha realizado
         }
+
+        //Reto3
+
+        if (requestCode == PICK_RETO3_REQUEST) {
+            if (resultCode == Activity.RESULT_OK) {
+                if ((data?.getStringExtra("resp1").toString().equals("3"))and(data?.getStringExtra("resp2").toString()!!.equals("2"))){
+                    boton3.setBackgroundColor(Color.GREEN)//boton verde= acierto
+                    Log.d("MisErrores","errores verde")
+                    toast("CORRECTO")//toast informativa
+                }else if ((data?.getStringExtra("resp1").toString().equals("2"))and(data?.getStringExtra("resp2").toString()!!.equals("3"))){
+                    boton3.setBackgroundColor(Color.GREEN)//boton verde= acierto
+                    Log.d("MisErrores","errores verde")
+                    toast("CORRECTO")//toast informativa
+                }else {
+                    boton3.setBackgroundColor(Color.RED)//boton rojo= error
+                    Log.d("MisErrores","errores rojo")
+                    toast("INCORRECTO")//toast informativa
+                }
+            }else{
+                respuesta.setText("Error al pasar datos")
+            }
+            boton3.setEnabled(false)//desactivamos el reto, ya se ha realizado
+        }
+
 
 
 
