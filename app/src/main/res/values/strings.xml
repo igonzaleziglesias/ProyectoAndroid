@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string name="action_settings">Settings</string>
+    <string name="reto1">reto1</string>
+    <string name="reto3">reto3</string>
+    <string name="reto2">reto2</string>
+    <string name="reto4">reto4</string>
+    <string name="en_que_a_o_muri_cristobal_col_n">¿En que año murió Cristobal Colón?</string>
+    <string name="aceptar">aceptar</string>
+    <string name="informaci_n">Información</string>
+    <string name="saca_una_foto_con_la_camara">Saca una foto con la camara</string>
+    <string name="foto">foto</string>
+    <string name="todo">todo</string>
+</resources>
