@@ -23,4 +23,5 @@
     <string name="terminar">Terminar</string>
     <string name="resultado">RESULTADO</string>
     <string name="volver_a_intentar">Volver a intentar</string>
+    <string name="elige_la_opcion_correcta">Elige la opcion correcta</string>
 </resources>
