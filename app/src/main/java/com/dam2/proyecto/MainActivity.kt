@@ -3,6 +3,7 @@ package com.dam2.proyecto
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Bundle
 import android.service.autofill.Validators.and
@@ -130,11 +131,19 @@ class MainActivity : Activity() {
                     Log.d("MisErrores","errores rojo")
                     toast("INCORRECTO")//toast informativa
                 }
+
+
+
+
+
             }else{
                 respuesta.setText("Error al pasar datos")
             }
             boton2.setEnabled(false)//desactivamos el reto, ya se ha realizado
         }
+
+
+
 
         //Reto3
 

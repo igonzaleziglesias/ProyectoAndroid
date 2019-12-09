@@ -24,4 +24,5 @@
     <string name="resultado">RESULTADO</string>
     <string name="volver_a_intentar">Volver a intentar</string>
     <string name="elige_la_opcion_correcta">Elige la opcion correcta</string>
+    <string name="saca_una_foto_con_la_camara_que_tenga_como_predominante_el_color_rojo">Saca una foto con la camara que tenga como predominante el color rojo</string>
 </resources>

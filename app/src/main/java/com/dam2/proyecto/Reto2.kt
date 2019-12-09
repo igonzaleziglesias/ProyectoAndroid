@@ -9,6 +9,7 @@ import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import android.view.View
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -83,7 +84,29 @@ class Reto2 : AppCompatActivity() {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             val imageBitmap = data?.extras?.get("data") as Bitmap
             imagen.setImageBitmap(imageBitmap)
-            condicion = true
+
+
+            // recojo el color del pixel central
+            val colorCentro = imageBitmap.getPixel(imageBitmap.width/2,imageBitmap.height/2)
+            val red = colorCentro shr 16 and 0xff
+            val green = colorCentro shr 8 and 0xff
+            val blue = colorCentro and 0xff
+
+            Log.d("miApp","R:"+red.toString()+" G:"+green.toString()+" B:"+blue.toString())
+            // comprueba si tiene componente roja mayoritariamente
+            var esRojo = false
+            if (red>100 && green<60 && blue<60) {
+                esRojo = true
+                Log.d("miApp","Es roja en el centro")
+                condicion = true
+            } else {
+                Log.d("miApp","NO es roja en el centro")
+            }
+
+
+
+
+
 
         }
     }

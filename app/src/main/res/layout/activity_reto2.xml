@@ -10,7 +10,7 @@
         android:id="@+id/pregunta2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/saca_una_foto_con_la_camara"
+        android:text="@string/saca_una_foto_con_la_camara_que_tenga_como_predominante_el_color_rojo"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,14 +23,14 @@
         android:id="@+id/imagen"
         android:layout_width="336dp"
         android:layout_height="345dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292"
-        app:srcCompat="?attr/dividerHorizontal"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintVertical_bias="0.461"
+        app:srcCompat="?attr/dividerHorizontal" />
 
     <Button
         android:id="@+id/foto"
