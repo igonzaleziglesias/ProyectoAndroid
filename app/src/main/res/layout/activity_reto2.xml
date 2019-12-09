@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/pregunta2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="334dp"
+        android:layout_height="157dp"
         android:text="@string/saca_una_foto_con_la_camara_que_tenga_como_predominante_el_color_rojo"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,15 +21,14 @@
 
     <ImageView
         android:id="@+id/imagen"
-        android:layout_width="336dp"
-        android:layout_height="345dp"
+        android:layout_width="277dp"
+        android:layout_height="292dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.461"
+        app:layout_constraintVertical_bias="0.589"
         app:srcCompat="?attr/dividerHorizontal" />
 
     <Button
@@ -42,7 +41,7 @@
         app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
+        app:layout_constraintVertical_bias="0.925" />
 
     <Button
         android:id="@+id/volver2"
@@ -51,9 +50,9 @@
         android:text="@string/aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
+        app:layout_constraintVertical_bias="0.935" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

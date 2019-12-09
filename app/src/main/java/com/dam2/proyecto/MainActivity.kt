@@ -133,15 +133,11 @@ class MainActivity : Activity() {
                 }
 
 
-
-
-
             }else{
                 respuesta.setText("Error al pasar datos")
             }
             boton2.setEnabled(false)//desactivamos el reto, ya se ha realizado
         }
-
 
 
 
