@@ -13,4 +13,14 @@
     <string name="todo">todo</string>
     <string name="x_2_5x_6_0">x^2-5x+6=0</string>
     <string name="confirmar">confirmar</string>
+    <string name="todo2">todo2</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO4</string>
+    <string name="todo5">todo5</string>
+    <string name="todo6">TODO6</string>
+    <string name="todo7">todo7</string>
+    <string name="todo1">TODO1</string>
+    <string name="terminar">Terminar</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="volver_a_intentar">Volver a intentar</string>
 </resources>
